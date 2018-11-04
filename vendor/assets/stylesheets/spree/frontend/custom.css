@@ -1,0 +1,7 @@
+.product-list-item{
+  border: 2px solid #00adee;
+}
+
+.product-list-item.hover{
+  border-color:#cccccc;
+}
