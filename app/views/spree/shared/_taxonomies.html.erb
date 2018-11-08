@@ -1,12 +1,33 @@
-<% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
+<style>
+  .sidebar-item{
+    border: 2px solid green;
+  }
 
+  /* sidebar-item is the "work area" of the sidebar */
+</style>
+
+
+
+<% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
+<div title = "The entire Side bar element" style = "border: 2px solid black;">
+<p title = "/Users/parthp/desktop/web-projects/environment/shop_cart/app/views/spree/shared/taxonomies"> hello1 </p>
 <nav id="taxonomies" class="sidebar-item" data-hook>
+  <p title = "/Users/parthp/desktop/web-projects/environment/shop_cart/app/views/spree/shared/taxonomies"> hello2 </p>
+
   <% @taxonomies.each do |taxonomy| %>
+
+  <div title = "these are the taxonomies or the sub categories within the sidebar" style = "border: 2px solid red;">
+  <p title = "this is placed in each taxonomy "> hello3 </p>
     <% cache [I18n.locale, taxonomy, max_level, @taxon] do %>
       <% if taxonomy.root.children.any? %>
         <h4 class='taxonomy-root'><%= Spree.t(:shop_by_taxonomy, taxonomy: taxonomy.name) %></h4>
         <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
       <% end %>
     <% end %>
+  </div>
+
   <% end %>
+
 </nav>
+
+</div>

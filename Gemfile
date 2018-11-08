@@ -5,7 +5,7 @@ ruby '2.3.3'
 
 # these are the things for Spree
 
-gem 'spree', '~> 3.6'
+gem 'spree', '~> 3.6.5'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 
