@@ -1,7 +1,15 @@
-.product-list-item{
+/* .product-list-item{
   border: 2px solid #00adee;
 }
 
 .product-list-item.hover{
+  border-color:#cccccc;
+} */
+
+div.panel.panel-default{
+  border: 2px solid #00adee;
+}
+
+div.panel.panel-default:hover{
   border-color:#cccccc;
 }

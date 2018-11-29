@@ -5,10 +5,28 @@
   </div>
 <% end %>
 
-<div data-hook="homepage_products">
-  <%# <% cache(cache_key_for_products) do %> %>
-    <%# <%= render partial: 'spree/shared/products', locals: { products: @products } %> %>
-  <%# <% end %> %>
-</div>
+<p title = "/Library/Ruby/Gems/2.3.0/gems/spree_frontend-3.6.4/app/views/spree/home/index.html.erb"> hello1.1 </p>
 
+
+
+<div data-hook="homepage_products">
+
+  <%# <% cache(cache_key_for_products) do %>
+    <%# <%= render partial: 'spree/shared/products', locals: { products: @products } %>
+  <%# <% end %>
+
+</div>
 <!-- To get rid of the products, I had to comment out the code above AND..... clear rails and browser cache -->
+
+
+
+
+
+<script>
+  if(document.getElementById("spree-headr")){
+    console.log("Exists!");
+  }
+  else{
+    console.log("Does not Exist!")
+  }
+</script>
