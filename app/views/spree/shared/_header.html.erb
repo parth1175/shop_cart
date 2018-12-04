@@ -12,7 +12,10 @@
   </header>
 
   <div class="container">
-    <%= render partial: 'spree/shared/main_nav_bar' %> 
+
+    <%= render partial: 'spree/shared/main_nav_bar', :locals => {@home => @home} %>
+    <%# <%= render partial: 'spree/shared/main_nav_bar'%>
+
   </div>
 
 </div>

@@ -8,7 +8,17 @@
     <%= render partial: 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-    <%= render partial: 'spree/shared/header' %>
+    <%#<% cunt = nav_elements(@homey) %>
+    <%#<% thingy = Navi_bar.new(cunt) %>
+
+<script>
+  //console.log("hello")
+  //console.log(<%#<%=thingy.get_nav_stuff()%>);
+  //console.log("bye")
+</script>
+
+    <%= render partial: 'spree/shared/header', :locals => {@home => @home} %>
+    <%# <%= render partial: 'spree/shared/header' %>
 
     <div class="container">
       <div class="row" data-hook>
@@ -25,4 +35,5 @@
       </div>
     </div>
   </body>
+  <%= controller.action_name %>
 </html>

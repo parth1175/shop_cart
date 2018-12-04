@@ -10,10 +10,10 @@ Rails.application.routes.draw do
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
- # get "/about", to: "spree/nav_bar/#about", as: "about"
 
   Spree::Core::Engine.routes do
-    get '/about', :to => 'nav_bar#index', :as =>:about
+    get '/about', :to => 'nav_bar#about', :as =>"about"
+    get "/Contact_us", to: "nav_bar#contactus", as: "contact_us"
   end
 
 
